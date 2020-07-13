@@ -1,23 +1,24 @@
-def add(num1, num2)
-    num1 + num2
-  end
-  
-  def subtract(num1, num2)
-    num1 - num2
-  end
-  
-  def sum(num1, num2)
-    num1 + num2
-  end
-  
-  def multiple(*nums)
+def add(x, y)
+    x + y
+end
+
+def subtract(a, b)
+    a - b
+end
+
+def sum(array)
+    array.inject(0){|sum,x| sum + x }
+end
+
+def multiply(*nums)
     nums.inject(:*)
-  end
-  
-  def factorial_recursive
-    self <= 1 ? 1 : self * (self - 1).factorial
-  end
-  
-  def power(num1, num2)
-    num1 ** num2
-  end
+end
+
+def power(a, b)
+    a.pow(b)
+end
+
+def recursive_factorial(n)
+    return 1 if n <= 1
+    n * recursive_factorial(n-1)
+end
