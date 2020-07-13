@@ -2,8 +2,8 @@ def add(x, y)
     x + y
 end
 
-def subtract(a, b)
-    a - b
+def subtract(x, y)
+    x - y 
 end
 
 def sum(array)
@@ -14,11 +14,11 @@ def multiply(*nums)
     nums.inject(:*)
 end
 
-def power(a, b)
-    a.pow(b)
+def power(x, y)
+    x.pow(y)
 end
 
-def recursive_factorial(n)
+def recursive_factorial(x)
     return 1 if n <= 1
-    n * recursive_factorial(n-1)
+    x * recursive_factorial(x - 1)
 end
