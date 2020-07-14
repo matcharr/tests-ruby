@@ -18,7 +18,7 @@ def power(x, y)
     x.pow(y)
 end
 
-def recursive_factorial(x)
+def factorial(x)
     return 1 if n <= 1
-    x * recursive_factorial(x - 1)
+    x * factorial(x - 1)
 end
