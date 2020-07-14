@@ -19,6 +19,6 @@ def power(x, y)
 end
 
 def factorial(x)
-    return 1 if n <= 1
+    return 1 if x <= 1
     x * factorial(x - 1)
 end
